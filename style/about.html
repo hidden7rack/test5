@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-
+
+transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>About Us</title>
+<link href="style/960.css" rel="stylesheet" type="text/css" />
+<link href="style/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="maincss.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="lib/pretty-json.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" type="text/css" />
+    <script src="//code.jquery.com/jquery-2.1.4.js" type="text/javascript"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js" type="text/javascript"></script>
+    <!-- Underscore, backbone and pretty are used for displaying the json responce in user redable format -->
+    <script type="text/javascript" src="lib/js/underscore-min.js"></script>
+    <script type="text/javascript" src="lib/js/backbone-min.js"></script>
+    <script type="text/javascript" src="lib/js/pretty-json-min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+  
+  
+  
+  
+  
+  
+      <!-- Favourit List Start -->
+  <script>
+  function addfav(flist){
+    alert(flist);
+    
+    
+ 
+
+  }
+  
+  
+  
+  </script>
+      <!-- Favourit List Start End -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<body>
+<!--container_12 start here-->
+<div class="container_12"> 
+  
+  <!--grid_12 start here-->
+  <div class="grid_12"> 
+    
+    <!--logo_container start here-->
+    <div id="logo_container"> <a href="#" id="logo"></a>
+      <div class="clear"></div>
+    </div>
+    <!--logo_container end here-->
+    
+     <div id="nav_wrapper">
+      <ul id="nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="current_page_item"><a href="about.html">About AIDS</a></li>
+        <li><a href="contact.html">Contact US</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  <!--grid_12 end here-->
+  
+  <div class="clear"></div>
+  
+  <!--grid_12 start here-->
+  <div class="grid_12">
+    <ul id="q_nav">
+      <li><a href="index.html">home</a></li>
+      <li><a href="#">/</a></li>
+      <li><a href="#"  class="active">About</a></li>
+    </ul>
+    <div class="clear"></div>
+    <hr />
+  </div>
+  <!--grid_12 end here-->
+  <div class="clear"></div>
+  
+    
+    
+      <!--search start here-->
+
+    <form method="get" target="_blank" action="http://www.google.com/search">
+      <div style="padding:4px;width:20em;"> 
+        <table border="0" cellpadding="0"> <tr><td> 
+          <input type="text" name="q" size="25" maxlength="255" value="" placeholder="search AIDS in google"/> 
+          <input type="submit" value="Google Search" /></td></tr>
+            </td></tr></table> </div> 
+        </form>
+
+    
+      
+      <!--search end here-->
+    
+    
+  <!--grid_12 start here-->
+  <div class="grid_12"> 
+    
+    <!--main_heading start here-->
+    <div class="main_heading">
+      <h2>What is<font class="pink"> AIDS </font>?</h2>
+    </div>
+    <!--main_heading end here--> 
+    
+  </div>
+  <!--grid_12 end here--> 
+  
+  <!--grid_9 start here-->
+  <div class="grid_9"> <br />
+    <p> AIDS stands for “<font class="pink"> A</font>cquired <font class="pink">I</font>mmune <font 
+
+class="pink">D</font>eficiency <font class="pink">S</font>yndrome”. </p>
+    <br />
+    <br />
+    <p> Acquired – means that the disease is not hereditary but develops after birth from contact with a disease-causing 
+
+agent (in this case, HIV). </p>
+    <br />
+    <br />
+    <p> Immunodeficiency – means that the disease is characterised by a weakening of the immune system. </p>
+    <br />
+    <br />
+    <p> Syndrome – refers to a group of symptoms that indicate or characterise a disease. In the case of AIDS, this can 
+
+include the development of certain infections and/or cancers, as well as a decrease in the number of certain specific blood 
+
+cells, called CD4+ T cells, which are crucial to helping the body fight disease. </p>
+    <br />
+    <br />
+    <p> AIDS is the last stage of HIV infection when a person’s immune system is severely damaged and has difficulty 
+
+fighting diseases. </p>
+    <br />
+    <br />
+    
+    <!--text_container start here-->
+   <script>
+        $(document).ready(function() {
+            var ytkey = 'AIzaSyBb3Ty37BeBABIBbqXaFHVHN0Bh-JX2ObA';
+            //youtubeApiCall();
+            $("#pageTokenNext").on( "click", function( event ) {
+                $("#pageToken").val($("#pageTokenNext").val());
+                youtubeApiCall();
+            });
+            $("#pageTokenPrev").on( "click", function( event ) {
+                $("#pageToken").val($("#pageTokenPrev").val());
+                youtubeApiCall();
+            });
+            $("#hyv-searchBtn").on( "click", function( event ) {
+                youtubeApiCall();
+                return false;
+            });
+            jQuery( "#hyv-search" ).autocomplete({
+              source: function( request, response ) {
+                //console.log(request.term);
+                var sqValue = [];
+                jQuery.ajax({
+                    type: "POST",
+                    url: "http://suggestqueries.google.com/complete/search?hl=en&ds=yt&client=youtube&hjson=t&cp=1",
+                    dataType: 'jsonp',
+                    data: jQuery.extend({
+                        q: request.term
+                    }, {  }),
+                    success: function(data){
+                        console.log(data[1]);
+                        obj = data[1];
+                        jQuery.each( obj, function( key, value ) {
+                            sqValue.push(value[0]);
+                        });
+                        response( sqValue);
+                    }
+                });
+              },
+              select: function( event, ui ) {
+                setTimeout( function () { 
+                    youtubeApiCall();
+                }, 300);
+              }
+            });
+            function getVideoDetails(ids){
+                $.ajax({
+                    cache: false,
+                    data: $.extend({
+                        key: ytkey,
+                        part: 'snippet,contentDetails,statistics'
+                    }, {id: ids}),
+                    dataType: 'json',
+                    type: 'GET',
+                    timeout: 5000,
+                    fields: "items(id,contentDetails,statistics,snippet(publishedAt,channelTitle,channelId,title,description,thumbnails(medium)))",
+                    url: 'https://www.googleapis.com/youtube/v3/videos'
+                })
+                .done(function(data) {
+                    var items = data.items, videoList = "";
+                    $.each(items, function(index,e) {
+                        videoList = videoList + '<li class="hyv-video-list-item"><div class="hyv-content-wrapper"><a rel="'+e.id+'" data-toggle="modal" data-target="#videoModal" class="hyv-content-link" title="'+e.snippet.title+'"><span class="title"><a href="#" onclick="addfav('+"'"+e.snippet.title+"'"+')">'+e.snippet.title+'</a></span><span class="stat attribution">by <span>'+e.snippet.channelTitle+'</span></span></a></div><div class="hyv-thumb-wrapper"><a  rel="'+e.id+'" data-toggle="modal" data-target="#videoModal" class="hyv-thumb-link"><span class="hyv-simple-thumb-wrap"><img alt="'+e.snippet.title+'" src="'+e.snippet.thumbnails.default.url+'" width="120" height="90"></span></a><span class="video-time">'+YTDurationToSeconds(e.contentDetails.duration)+'</span></div></li>';
+                    });
+                    $("#hyv-watch-related").html(videoList);
+                    // JSON Responce to display for user
+                    new PrettyJSON.view.Node({ 
+                        el:$(".hyv-watch-sidebar-body"), 
+                        data:data
+                    });
+                });
+            }
+
+            function YTDurationToSeconds(duration) {
+                var match = duration.match(/PT(\d+H)?(\d+M)?(\d+S)?/)
+
+                var hours = ((parseInt(match[1]) || 0) !== 0)?parseInt(match[1])+":":"";
+                var minutes = ((parseInt(match[2]) || 0) !== 0)?parseInt(match[2])+":":"";
+                var seconds = ((parseInt(match[3]) || 0) !== 0)?parseInt(match[3]):"00";
+                var total = hours + minutes + seconds;
+                return total;
+            }
+
+            function youtubeApiCall(){
+                $.ajax({
+                    cache: false,
+                    data: $.extend({
+                        key: ytkey,
+                        q: $('#hyv-search').val(),
+                        part: 'snippet'
+                    }, {maxResults:20,pageToken:$("#pageToken").val()}),
+                    dataType: 'json',
+                    type: 'GET',
+                    timeout: 5000,
+                    fields: "pageInfo,items(id(videoId)),nextPageToken,prevPageToken",
+                    url: 'https://www.googleapis.com/youtube/v3/search'
+                })
+                .done(function(data) {
+                    $('.btn-group').show();
+                    if (typeof data.prevPageToken === "undefined") {$("#pageTokenPrev").hide();}else{$("#pageTokenPrev").show();}
+                    if (typeof data.nextPageToken === "undefined") {$("#pageTokenNext").hide();}else{$("#pageTokenNext").show();}
+                    var items = data.items, videoids = [];
+                    $("#pageTokenNext").val(data.nextPageToken);
+                    $("#pageTokenPrev").val(data.prevPageToken);
+                    $.each(items, function(index,e) {
+                        videoids.push(e.id.videoId);
+                    });
+                    getVideoDetails(videoids.join());
+                });
+            } 
+
+            var $midlayer = $('.modal-body');
+            $('#videoModal').on('show.bs.modal', function (event) {
+                //var $video = $('a.video');
+                //var vid = $video.attr('rel');
+                var vid = event.relatedTarget.rel;
+                var url = "//youtube.com/embed/"+vid+"?autoplay=0&autohide=1&modestbranding=1&rel=1&hd=1";
+                var iframe = '<iframe />';
+                var width_f = '100%';
+                var height_f = 400;
+                var frameborder = 0;
+                jQuery(iframe, {
+                    name: 'videoframe',
+                    id: 'videoframe',
+                    src: url,
+                    width:  width_f,
+                    height: height_f,
+                    frameborder: 0,
+                    class: 'youtube-player',
+                    type: 'text/html',
+                    allowfullscreen: true
+                }).appendTo($midlayer);   
+            });
+            $('#videoModal').on('hide.bs.modal', function (event) {
+                $('div.modal-body').html('');
+            });
+        });
+    </script>
+    <style type="text/css">
+        body{
+            background-color: #efefef;
+        }
+        .container-4 input#hyv-search {
+            width: 500px;
+            height: 30px;
+            border: 1px solid #c6c6c6;
+            font-size: 10pt;
+            float: left;
+            padding-left: 15px;
+            -webkit-border-top-left-radius: 5px;
+            -webkit-border-bottom-left-radius: 5px;
+            -moz-border-top-left-radius: 5px;
+            -moz-border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .container-4 button.icon {
+            height: 30px;
+            background: #f0f0f0 url('images/searchicon.png') 10px 1px no-repeat;
+            background-size: 24px;
+            -webkit-border-top-right-radius: 5px;
+            -webkit-border-bottom-right-radius: 5px;
+            -moz-border-radius-topright: 5px;
+            -moz-border-radius-bottomright: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border: 1px solid #c6c6c6;
+            width: 50px;
+            margin-left: -44px;
+            color: #4f5b66;
+            font-size: 10pt;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">    
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row-fluid">
+        <main id="content" role="main" class="span12">
+            <!-- Begin Content -->
+ 
+            <div id="hyv-page-container" style="clear:both;">
+                <div class="hyv-content-alignment">
+                    <div id="hyv-page-content" class="" style="overflow:hidden;">
+                      
+                                 <div class="push_5">123 </div>
+                      
+                        <div>
+                        <div class="container-4">
+                            <form action="" method="post" name="hyv-yt-search" id="hyv-yt-search">
+                                <input type="search" name="hyv-search" id="hyv-search" placeholder="Search Youtube Video..." class="ui-autocomplete-input" autocomplete="off">
+                                <button class="icon" id="hyv-searchBtn"></button>
+                            </form>
+                        </div>
+                       
+                            <input type="hidden" id="pageToken" value="">
+                            <div class="btn-group" role="group" aria-label="..." style="display:none;">
+                              <button type="button" id="pageTokenPrev" value="" class="btn btn-default">Prev</button>
+                              <button type="button" id="pageTokenNext" value="" class="btn btn-default">Next</button>
+                            </div>
+                        </div>
+                        <div id="hyv-watch-content" class="hyv-watch-main-col hyv-card hyv-card-has-padding">
+                             <ul id="hyv-watch-related" class="hyv-video-list">
+                            </ul>
+                        </div>
+
+                        <!-- Ads width 300px holder start -->
+                        <div id="hyv-watch-sidebar-ads" style="float:left;">
+                            <div id="hyv-watch-channel-brand-div" class="">
+                                <div id="hyv-watch-channel-brand-div-text">Advertisement</div>
+                                <div id="hyv-companion-ad-div">
+                                </div>
+                            <div class="hyv-watch-sidebar-section">
+                              <div style="font-weight:bold;height:10px;">JSON Responce</div>
+                                    <div class="hyv-watch-sidebar-body"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Ads width 300px holder end -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+  <!--grid_12 start here-->
+  <div class="grid_12"> 
+    
+  <!--footer start here-->
+    
+    <div id="footer"> 
+      
+      <!--grid_3 start here-->
+      <div class="grid_3">
+        <h1>Stay in touch</h1>
+
+        <img src="images/QR.png" alt="" /> </div>
+      <!--grid_3 end here--> 
+      
+      <!--grid_3 start here-->
+      <div class="grid_3 nomarginright">
+        <h1>Supported by</h1>
+
+        <p class="text_shadow"><a href="http://www.info.gov.hk/aids/english/index.htm" target="_blank">Virtual AIDS 
+
+Office</a></p>
+        <p class="text_shadow"><a href="http://aids.org.hk/" target="_blank">Hong Kong AIDS Foundation</a></p>
+      </div>
+      <!--grid_3 end here--> 
+      
+      <!--grid_3 start here-->
+      <div class="grid_2 nomarginright paddingleft">
+        <h1>Show some love</h1>
+        <div class="social_icon"><a href="https://www.facebook.com/AIDSConcern"><img src="images/fb.png" width="16" 
+
+height="16" alt="" /></a></div>
+        <div class="social_icon"><a href="https://twitter.com/aidsconcern"><img src="images/twt.png" width="16" 
+
+height="16" alt="" /></a></div>
+        <div class="social_icon"><a href="https://www.instagram.com/aids_concern/"><img src="images/in.png" width="16" 
+
+height="16" alt="" /></a></div>
+      </div>
+      <!--grid_3 end here--> 
+      
+      <!--grid_3 start here-->
+      <div class="grid_3 nomarginright paddingleft">
+        <h1>Contact</h1>
+
+        <p class="text_shadow">Reach us at <a href="mailto:enquire@aidsconcern.org.hk?Subject=Hello!"> 
+
+enquire@aidsconcern.org.hk</a><br />
+          Call now (852)2898 4411 </p>
+      </div>
+      <!--grid_3 end here--> 
+      
+    </div>
+    
+    <!--footer end here-->
+    
+<div class="copyright">Kwok Wai Fan - 305CDE Assignment July 2017</div>
+<ul id="footer_nav">
+      <li><a href="#">Top</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About AIDS</a></li>
+      <li><a href="contact.html">Contact US</a></li>
+      <li class="noborderright"><a href="login.html">Login</a></li>
+    </ul>
+  </div>
+  <!--grid_12 start here-->
+  
+  <div class="clear"></div>
+</div>
+<!--container_12 end here-->
+
+</body>
+</html>
